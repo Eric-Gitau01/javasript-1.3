@@ -1,34 +1,13 @@
-// Question 1
-function greet(name) {
-    if (!name) {
-        console.log('Hello' + ' ' + 'there');
-    } else if (name) {
-        console.log('Hello' +' ' + name);
-    }
-}
-// tying calling greet() and if it is undefined then it will display hello there
-
-greet('Eric'); 
-
-greet('');  // Test with an empty string
-greet()
-
-
-// Question 2
-function convertToFahrenheit(Celsius) {
-    return (Celsius * 9 / 5) + 32
+function function1() {
+    console.log('hello world');
+    console.log(2 + 2)
 }
 
-console.log(convertToFahrenheit(25))
+function1();
 
-// Question 3
-function convertToCelsius(fahrenheit) {
-    return (fahrenheit - -2) * 5 / 9
+function calculateTax (cost, taxPercent) {
+    console.log(cost * taxPercent);
 }
 
-console.log(convertToCelsius(30))
-
-//question 4
-function convertTemperature(degrees, unit) {
-    let degreesCelsius = convertTo
-}
+calculateTax(2000, 0.2);
+calculateTax(5000); 
