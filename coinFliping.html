@@ -7,10 +7,48 @@
 </head>
 <body>
     <h1>play the game</h1>
-    <button onclick="flipCoinHead()">Head</button>
-    <button onclick="flipCoinTail()">Tail</button>
-    <button onclick="flipCoin()">Flip Coin</button>
+    <button onclick="flipCoin()
+       
+    ">Flip Coin</button>
+    <button onclick="head()">Head</button>
+    <button onclick="tails()">Tail</button>
     <p id="result-el"></p>
-    <script src="coinFliping.js"></script>
+    <script>
+        let userGuess = '';
+
+        function head() {
+            userGuess = 'head'
+            document.getElementById('result-el').textContent = "you have geussed head press flip Coin to see the result"
+        }
+ 
+        function tails() {
+            userGuess = 'tails'
+            document.getElementById('result-el').textContent = `you have geussed tail press flip Coin to see the result`
+        }
+
+        function flipCoin() {
+            if (userGuess === '') {
+                document.getElementById('result-el').textContent = `first you need to have a guess`
+                return
+            }
+            const randomNumber = Math.random()
+            let result = ''
+            if (randomNumber >= 0 && randomNumber < 0.5) {
+                result = 'head'
+            } else {
+                result = 'tail'
+            }
+
+            if (userGuess === result) {
+                document.getElementById('result-el').textContent = `the coin landed on ${result} so you are correct`
+            } else {
+                document.getElementById('result-el').textContent = `the coin landed on ${result} and you are wrong`
+            }
+
+            userGuess = ''
+        }
+
+
+    </script>
 </body>
 </html>
