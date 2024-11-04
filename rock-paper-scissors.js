@@ -79,9 +79,15 @@ function playGame(playerMove) {
     updateScoreEl();
     
     // Show the result of the game and updated score on the webpage.
-    document.querySelector('.js-result').innerHTML = result;
-    document.querySelector('.js-move').innerHTML = `Computer chose ${computerMove}, you chose ${playerMove}. Result: ${result}
-    Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+    document.querySelector('.js-result').innerHTML = result; // Display result
+
+    document.querySelector('.js-moves').innerHTML = `
+       You: <img src="img/${playerMove}-emoji.png" class="move-icon"> 
+       <img src="img/${computerMove}-emoji.png" class="move-icon"> Computer
+    `;
+    
+    
+
 } 
 
 function updateScoreEl() {

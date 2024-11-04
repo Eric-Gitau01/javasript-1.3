@@ -4,28 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM PROJECTS</title>
-    <style>
-        body {
-            background-color: #333;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="dom-project.css">
 </head>
 <body>
     <p>Youtube subscribe button</p>
-    <button id="subscribe-btn" onclick="subscribe()">subscribe</button>
-    <script>
-       function subscribe() {
-        let buttonEl = document.getElementById("subscribe-btn");
-        document.getElementById("subscribe-btn")
-        if (buttonEl.innerText === "subscribe") {
-            buttonEl.innerText = "Subscribed"; 
-        } else {
-            buttonEl.innerText = "subscribe";
-        }
-    
-           
-       }
-    </script>
+    <button id="subscribe-btn" onclick="subscribe()" class = "subscribe-button">subscribe</button>
+    <hr>
+    <p>amazon project</p>
+    <input placeholder="Cost of order" class="js-cost cost-input cost-input" onkeydown="handleCostKeydown(event.key)">
+    <button onclick="calculateTotal()" class="calculate-btn">Calculate</button>
+    <p class="js-total-cost"></p>
+    <script src="dom-project.js"></script>
 </body>
 </html>

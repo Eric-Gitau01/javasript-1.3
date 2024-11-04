@@ -78,3 +78,14 @@ const object5 = {
 
 console.log(object5)
 object5.method()
+
+// question 1
+
+const product = {
+    name: 'basketball',
+    price: 2095
+  };
+  console.log(product);
+
+  product.price += 500;
+  console.log(product);

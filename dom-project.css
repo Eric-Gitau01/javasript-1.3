@@ -1,0 +1,29 @@
+.subscribe-button {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.is-subscribed {
+    background-color: rgb(196, 193, 193);
+    color: black;
+}
+
+.cost-input {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.calculate-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 12px 15px;
+    cursor: pointer;
+}
