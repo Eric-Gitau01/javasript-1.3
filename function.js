@@ -77,3 +77,9 @@ function convertLength(length, from, to) {
 console.log(convertLength(5, 'miles', 'km'));  // 8 km
 console.log(convertLength(5, 'miles', 'ft'));  // 26400 ft
 console.log(convertLength(5, 'lb', 'ft'));     // 16405 ft
+
+
+let x = 'Eric Ngaruiya Gitau'
+let word = x.slice(6, 10)
+
+console.log(word)
